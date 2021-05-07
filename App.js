@@ -32,7 +32,14 @@ const HomeScreen = () => {
   const [date, setDate] = React.useState(new Date());
 
   const handleSubmit = () => {
-    return console.log(mrormrsvalue, gender, firstname);
+    const ScoreDetail = {
+      mrormrsvalue: mrormrsvalue,
+      gender: gender,
+      firstname: firstname,
+      lastname: lastname,
+      ssn: ssn,
+    };
+    return console.log(ScoreDetail);
   };
   const isEnabled =
     (!date || ssn.length > 0) &&
